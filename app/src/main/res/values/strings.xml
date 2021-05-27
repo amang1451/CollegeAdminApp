@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">College Admin App</string>
+    <string name="computer_science_engineering"><![CDATA[Computer Science & Engineering]]></string>
+    <string name="electronics_communication_engineering"><![CDATA[Electronics Communication & Engineering]]></string>
+</resources>

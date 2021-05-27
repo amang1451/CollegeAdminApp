@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.collegeadminapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CollegeAdminApp">
+        <activity android:name=".deleteNotice.DeleteNotice"
+            android:label="Delete Notice"
+            android:parentActivityName=".MainActivity"
+            >
+
+        </activity>
+        <activity android:name=".faculty.UpdateTeacher"
+            android:label="Update Faculty Information"
+            android:parentActivityName=".faculty.UpdateFaculty"/>
+        <activity
+            android:name=".faculty.AddFaculty"
+            android:label="Add Faculty"
+            android:parentActivityName=".faculty.UpdateFaculty" />
+        <activity
+            android:name=".faculty.UpdateFaculty"
+            android:label="Faculty Information"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".UplaodEbook"
+            android:label="Upload Ebook"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".UploadImages"
+            android:label="Upload Images"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".deleteNotice.UploadNotice"
+            android:label="Upload Notice"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
